@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+
+    <title>OhmyFood</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <img class="__logo" src="/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo" />
+      </div>
+      <div class="location">
+        <div class="__ping"><i class="fas fa-map-marker-alt"></i></div>
+        Paris, Belleville
+      </div>
+      <div class="explore">
+        <h1>
+          Réservez le menu qui<br />
+          vous convient
+        </h1>
+        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <button class="btn">Explorer nos restaurants</button>
+      </div>
+    </header>
+
+    <!-- ***** ***** ***** TUTO ***** ***** *****-->
+
+    <nav class="nav">
+      <h1 class="nav__title">Fonctionnement</h1>
+      <ol class="nav__list">
+        <li class="nav__list__item">
+          <i class="fas fa-mobile-alt"></i>
+          un restaurant
+        </li>
+        <li class="nav__list__item"><i class="fas fa-list-ul"></i> Composez votre menu</li>
+        <li class="nav__list__item--actif">
+          <i class="fas fa-store"></i>
+          Dégustez au restaurant
+        </li>
+      </ol>
+    </nav>
+    <!-- ***** ***** ***** Restaurants ***** ***** *****-->
+    <div class="homepage_restaurants">
+      <div class="homepage_restaurants_title">Restaurants</div>
+      <div class="homepage_restaurants_card">
+        <a href="page2.html">
+          <img
+            class="homepage_restaurants_photos"
+            src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="Photo d'un plat"
+        /></a>
+        <div class="homepage_restaurants_card_badge">Nouveau</div>
+        <div class="container">
+          <div class="homepage_restaurants_card_txt">
+            <div class="homepage_restaurants_card_title">La palette du goût</div>
+            <div class="homepage_restaurants_card_sector">Ménilmontant</div>
+          </div>
+          <div class="homepage_restaurants_card_like">
+            <input id="like" type="checkbox" />
+            <label for="like">
+              <svg class="heart" viewBox="0 0 512 512" width="100" title="heart">
+                <defs>
+                  <linearGradient id="pattern" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#a55cdc" />
+                    <stop offset="0.14285714285714285" stop-color="#b05edc" />
+                    <stop offset="0.2857142857142857" stop-color="#ba61dc" />
+                    <stop offset="0.42857142857142855" stop-color="#c464db" />
+                    <stop offset="0.5714285714285714" stop-color="#cd67db" />
+                    <stop offset="0.7142857142857142" stop-color="#d66adb" />
+                    <stop offset="0.8571428571428571" stop-color="#df6dda" />
+                    <stop offset="1" stop-color="#e771da" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                />
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="homepage_restaurants_card">
+        <img
+          class="homepage_restaurants_photos"
+          src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="Photo d'un plat"
+        />
+        <div class="homepage_restaurants_card_badge">Nouveau</div>
+        <div class="container">
+          <div class="homepage_restaurants_card_txt">
+            <div class="homepage_restaurants_card_title">La palette du goût</div>
+            <div class="homepage_restaurants_card_sector">Ménilmontant</div>
+          </div>
+          <div class="homepage_restaurants_card_like">
+            <button>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="far"
+                data-icon="heart"
+                class="heart"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="homepage_restaurants_card">
+        <img
+          class="homepage_restaurants_photos"
+          src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="Photo d'un plat"
+        />
+        <div class="homepage_restaurants_card_badge">Nouveau</div>
+        <div class="container">
+          <div class="homepage_restaurants_card_txt">
+            <div class="homepage_restaurants_card_title">La palette du goût</div>
+            <div class="homepage_restaurants_card_sector">Ménilmontant</div>
+          </div>
+          <div class="homepage_restaurants_card_like">
+            <button>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="far"
+                data-icon="heart"
+                class="heart"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="homepage_restaurants_card">
+        <img
+          class="homepage_restaurants_photos"
+          src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="Photo d'un plat"
+        />
+        <div class="homepage_restaurants_card_badge">Nouveau</div>
+        <div class="container">
+          <div class="homepage_restaurants_card_txt">
+            <div class="homepage_restaurants_card_title">La palette du goût</div>
+            <div class="homepage_restaurants_card_sector">Ménilmontant</div>
+          </div>
+          <div class="homepage_restaurants_card_like">
+            <button>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="far"
+                data-icon="heart"
+                class="heart"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** FOOTER ***** -->
+    <footer>
+      <div class="footer_title">ohmyfood</div>
+      <div class="footer_list">
+        <div class="footer_list_icon">
+          <i class="fas fa-utensils"></i>
+        </div>
+        <b> Proposer un restaurant</b>
+      </div>
+      <div class="footer_list">
+        <div class="footer_list_icon">
+          <i class="fas fa-hands-helping"></i>
+        </div>
+        <b>Devenir partenaire</b>
+      </div>
+      <div class="footer_list">Mention légales</div>
+      <div class="footer_list">Contact</div>
+    </footer>
+  </body>
+</html>

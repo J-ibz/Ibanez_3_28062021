@@ -1,0 +1,24 @@
+footer {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  padding: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer_title {
+  font-family: "Shrikhand", cursive;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.fa-hands-helping {
+  font-size: 13px;
+}
+.footer_list {
+  margin: 10px;
+  display: flex;
+}
+.footer_list_icon {
+  width: 25px;
+}

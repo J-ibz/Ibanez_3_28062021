@@ -1,0 +1,62 @@
+.btn {
+  width: 15em;
+  height: 3em;
+  color: white;
+  font-weight: bold;
+  border-radius: 10em;
+  border: none;
+  background: linear-gradient(0deg, var(--clr-primary), var(--clr-secondary));
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.btn:hover {
+  filter: brightness(1.08);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.35);
+}
+
+.homepage_restaurants_card_like {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 26px;
+  margin-right: 20px;
+}
+/* ***** LIKE BUTTON ***** */
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label:before {
+  content: "\f004";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  overflow: visible;
+  font-size: 1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px grey;
+  position: relative;
+  cursor: pointer;
+}
+
+.fa-heart {
+  font-size: 1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px grey;
+  clip-path: circle(0% at 50% 100%); /*taille du cercle, position de départ sur l'axe Y et X */
+  position: absolute;
+}
+
+input:checked + label i {
+  clip-path: circle(100%);
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  transition: all 0.7s ease-in-out;
+  -webkit-text-stroke: 1px transparent;
+}
+
+input {
+  display: none;
+}

@@ -9,199 +9,155 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
-
-    <title>OhmyFood</title>
+    <title>ohmyFood</title>
   </head>
   <body>
+    <!-- ***** LOADER ****** -->
     <section class="loader">
-      <div class="circle"></div>
+      <p>Ohmyfood</p>
+      <div class="spinner"></div>
     </section>
+
+    <!-- ***** HEADER ***** -->
     <header>
-      <div class="heading">
-        <img class="__logo" src="/Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo" />
-      </div>
-      <div class="location">
-        <div class="__ping"><i class="fas fa-map-marker-alt"></i></div>
-        Paris, Belleville
-      </div>
-      <div class="explore">
-        <h1>
-          Réservez le menu qui<br />
-          vous convient
-        </h1>
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <button class="btn">Explorer nos restaurants</button>
-      </div>
+      <div class="header header_brand">ohmyfood</div>
     </header>
 
-    <!-- ***** ***** ***** TUTO ***** ***** *****-->
+    <!-- ***** LOCALISATION ***** -->
+    <div class="localisation">
+      <div class="localisation_marker"><i class="fas fa-map-marker-alt"></i></div>
+      Paris, Belleville
+    </div>
+
+    <!-- ***** NAVIGATION ***** -->
+    <div class="explore">
+      <h1>
+        Réservez le menu qui<br />
+        vous convient
+      </h1>
+      <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+      <button class="btn">Explorer nos restaurants</button>
+    </div>
+
+    <!-- ***** TUTO *****-->
 
     <nav class="nav">
-      <h1 class="nav__title">Fonctionnement</h1>
       <ol class="nav__list">
+        <h1 class="nav__title">Fonctionnement</h1>
         <li class="nav__list__item">
           <i class="fas fa-mobile-alt"></i>
           un restaurant
         </li>
         <li class="nav__list__item"><i class="fas fa-list-ul"></i> Composez votre menu</li>
-        <li class="nav__list__item--actif">
+        <li class="nav__list__item --actif">
           <i class="fas fa-store"></i>
           Dégustez au restaurant
         </li>
       </ol>
     </nav>
-    <!-- ***** ***** ***** Restaurants ***** ***** *****-->
-    <div class="homepage_restaurants">
-      <div class="homepage_restaurants_title">Restaurants</div>
-      <div class="homepage_restaurants_card">
-        <a href="page2.html">
-          <img
-            class="homepage_restaurants_photos"
-            src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            alt="Photo d'un plat"
-        /></a>
-        <div class="homepage_restaurants_card_badge">Nouveau</div>
-        <div class="container">
-          <div class="homepage_restaurants_card_txt">
-            <div class="homepage_restaurants_card_title">La palette du goût</div>
-            <div class="homepage_restaurants_card_sector">Ménilmontant</div>
-          </div>
-          <div class="homepage_restaurants_card_like">
-            <input id="toggle1" type="checkbox" />
-            <label for="toggle1">
-              <svg class="heart" viewBox="0 0 512 512" width="100" title="heart">
-                <defs>
-                  <linearGradient id="pattern" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#a55cdc" />
-                    <stop offset="0.14285714285714285" stop-color="#b05edc" />
-                    <stop offset="0.2857142857142857" stop-color="#ba61dc" />
-                    <stop offset="0.42857142857142855" stop-color="#c464db" />
-                    <stop offset="0.5714285714285714" stop-color="#cd67db" />
-                    <stop offset="0.7142857142857142" stop-color="#d66adb" />
-                    <stop offset="0.8571428571428571" stop-color="#df6dda" />
-                    <stop offset="1" stop-color="#e771da" />
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                />
-              </svg>
-            </label>
-          </div>
-        </div>
-      </div>
 
-      <div class="homepage_restaurants_card">
-        <img
-          class="homepage_restaurants_photos"
-          src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-          alt="Photo d'un plat"
-        />
-        <div class="homepage_restaurants_card_badge">Nouveau</div>
-        <div class="container">
-          <div class="homepage_restaurants_card_txt">
-            <div class="homepage_restaurants_card_title">La palette du goût</div>
-            <div class="homepage_restaurants_card_sector">Ménilmontant</div>
-          </div>
-          <div class="homepage_restaurants_card_like">
-            <input id="toggle2" type="checkbox" />
-            <label for="toggle2">
-              <svg class="heart" viewBox="0 0 512 512" width="100" title="heart">
-                <defs>
-                  <linearGradient id="pattern" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#a55cdc" />
-                    <stop offset="0.14285714285714285" stop-color="#b05edc" />
-                    <stop offset="0.2857142857142857" stop-color="#ba61dc" />
-                    <stop offset="0.42857142857142855" stop-color="#c464db" />
-                    <stop offset="0.5714285714285714" stop-color="#cd67db" />
-                    <stop offset="0.7142857142857142" stop-color="#d66adb" />
-                    <stop offset="0.8571428571428571" stop-color="#df6dda" />
-                    <stop offset="1" stop-color="#e771da" />
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                />
-              </svg>
-            </label>
-          </div>
-        </div>
-      </div>
+    <!-- ***** LISTES RESTAURANTS *****-->
 
-      <div class="homepage_restaurants_card">
-        <img
-          class="homepage_restaurants_photos"
-          src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-          alt="Photo d'un plat"
-        />
-        <div class="homepage_restaurants_card_badge">Nouveau</div>
-        <div class="container">
-          <div class="homepage_restaurants_card_txt">
-            <div class="homepage_restaurants_card_title">La palette du goût</div>
-            <div class="homepage_restaurants_card_sector">Ménilmontant</div>
-          </div>
-          <div class="homepage_restaurants_card_like">
-            <input id="toggle3" type="checkbox" />
-            <label for="toggle3">
-              <svg class="heart" viewBox="0 0 512 512" width="100" title="heart">
-                <defs>
-                  <linearGradient id="pattern" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#a55cdc" />
-                    <stop offset="0.14285714285714285" stop-color="#b05edc" />
-                    <stop offset="0.2857142857142857" stop-color="#ba61dc" />
-                    <stop offset="0.42857142857142855" stop-color="#c464db" />
-                    <stop offset="0.5714285714285714" stop-color="#cd67db" />
-                    <stop offset="0.7142857142857142" stop-color="#d66adb" />
-                    <stop offset="0.8571428571428571" stop-color="#df6dda" />
-                    <stop offset="1" stop-color="#e771da" />
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                />
-              </svg>
-            </label>
+    <section class="homepage_restaurants">
+      <div class="homepage_wrappergrid">
+        <h1 class="homepage_restaurants_title">Restaurants</h1>
+        <div class="homepage_restaurants_card">
+          <a href="la_palette_du_gout.html">
+            <img
+              class="homepage_restaurants_photos"
+              src="/Maquettes Ohmyfood/images/restaurants/la_palette_du_gout.jpg"
+              alt="Photo d'un plat"
+          /></a>
+          <div class="homepage_restaurants_card_badge">Nouveau</div>
+          <div class="container_card">
+            <div class="homepage_restaurants_card_txt">
+              <div class="homepage_restaurants_card_title">La palette du goût</div>
+              <div class="homepage_restaurants_card_sector">Ménilmontant</div>
+            </div>
+            <div class="homepage_restaurants_card_like">
+              <!-- ***** LIKE BUTTON ***** -->
+              <input class="like" id="toggle1" type="checkbox" />
+              <label for="toggle1">
+                <i class="fas fa-heart"></i>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="homepage_restaurants_card">
-        <img
-          class="homepage_restaurants_photos"
-          src="/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-          alt="Photo d'un plat"
-        />
-        <div class="homepage_restaurants_card_badge">Nouveau</div>
-        <div class="container">
-          <div class="homepage_restaurants_card_txt">
-            <div class="homepage_restaurants_card_title">La palette du goût</div>
-            <div class="homepage_restaurants_card_sector">Ménilmontant</div>
+        <div class="homepage_restaurants_card">
+          <a href="la_note_enchantee.html">
+            <img
+              class="homepage_restaurants_photos"
+              src="/Maquettes Ohmyfood/images/restaurants/la_note_enchantee.jpg"
+              alt="Photo d'un plat"
+            />
+          </a>
+          <div class="homepage_restaurants_card_badge">Nouveau</div>
+          <div class="container_card">
+            <div class="homepage_restaurants_card_txt">
+              <div class="homepage_restaurants_card_title">La note enchantée</div>
+              <div class="homepage_restaurants_card_sector">Charonne</div>
+            </div>
+            <div class="homepage_restaurants_card_like">
+              <!-- ***** LIKE BUTTON ***** -->
+              <input id="toggle2" type="checkbox" />
+              <label for="toggle2">
+                <i class="fas fa-heart"></i>
+              </label>
+            </div>
           </div>
-          <div class="homepage_restaurants_card_like">
-            <input id="toggle4" type="checkbox" />
-            <label for="toggle4">
-              <svg class="heart" viewBox="0 0 512 512" width="100" title="heart">
-                <defs>
-                  <linearGradient id="pattern" x1="0" y1="0" x2="800" y2="0" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#a55cdc" />
-                    <stop offset="0.14285714285714285" stop-color="#b05edc" />
-                    <stop offset="0.2857142857142857" stop-color="#ba61dc" />
-                    <stop offset="0.42857142857142855" stop-color="#c464db" />
-                    <stop offset="0.5714285714285714" stop-color="#cd67db" />
-                    <stop offset="0.7142857142857142" stop-color="#d66adb" />
-                    <stop offset="0.8571428571428571" stop-color="#df6dda" />
-                    <stop offset="1" stop-color="#e771da" />
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                />
-              </svg>
-            </label>
+        </div>
+
+        <div class="homepage_restaurants_card">
+          <a href="la_francaise.html">
+            <img
+              class="homepage_restaurants_photos"
+              src="/Maquettes Ohmyfood/images/restaurants/a_la_française.jpg"
+              alt="Photo d'un plat"
+            />
+          </a>
+          <div class="homepage_restaurants_card_badge">Nouveau</div>
+          <div class="container_card">
+            <div class="homepage_restaurants_card_txt">
+              <div class="homepage_restaurants_card_title">A la française</div>
+              <div class="homepage_restaurants_card_sector">Cité Rouge</div>
+            </div>
+            <div class="homepage_restaurants_card_like">
+              <!-- ***** LIKE BUTTON ***** -->
+              <input id="toggle3" type="checkbox" />
+              <label for="toggle3">
+                <i class="fas fa-heart"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="homepage_restaurants_card">
+          <a href="le_delice_des_sens.html">
+            <img
+              class="homepage_restaurants_photos"
+              src="/Maquettes Ohmyfood/images/restaurants/le_delice_des_sens.jpg"
+              alt="Photo d'un plat"
+            />
+          </a>
+          <div class="homepage_restaurants_card_badge">Nouveau</div>
+          <div class="container_card">
+            <div class="homepage_restaurants_card_txt">
+              <div class="homepage_restaurants_card_title">Le délice des sens</div>
+              <div class="homepage_restaurants_card_sector">Folie-Méricourt</div>
+            </div>
+            <div class="homepage_restaurants_card_like">
+              <!-- ***** LIKE BUTTON ***** -->
+              <input id="toggle4" type="checkbox" />
+              <label for="toggle4">
+                <i class="fas fa-heart"></i>
+              </label>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <!-- ***** FOOTER ***** -->
     <footer>
       <div class="footer_title">ohmyfood</div>
@@ -217,8 +173,8 @@
         </div>
         <b>Devenir partenaire</b>
       </div>
-      <div class="footer_list">Mention légales</div>
-      <div class="footer_list">Contact</div>
+      <div class="footer_list"><a href="#">Mention légales</a></div>
+      <div class="footer_list"><a href="mailto:someone@ohmyfood.com"> Contact</a></div>
     </footer>
   </body>
 </html>

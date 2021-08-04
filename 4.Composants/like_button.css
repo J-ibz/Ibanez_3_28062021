@@ -1,0 +1,39 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label:before {
+  content: "\f004";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  overflow: visible;
+  font-size: 1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px grey;
+  position: relative;
+  cursor: pointer;
+}
+
+.fa-heart {
+  font-size: 1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px grey;
+  clip-path: circle(0% at 50% 100%); /*taille du cercle, position de départ sur l'axe Y et X */
+  position: absolute;
+}
+
+input:checked + label i {
+  clip-path: circle(100%);
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  transition: all 0.7s ease-in-out;
+  -webkit-text-stroke: 1px transparent;
+}
+
+input {
+  display: none;
+}

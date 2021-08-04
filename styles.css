@@ -3,7 +3,7 @@
 @import "/3.Layout/header.css";
 @import "/3.Layout/footer.css";
 @import "/4.Composants/regular_button.css";
-@import "/4.Composants/like_button.css";
+@import url("/4.Composants/like_button.css");
 @import "/4.Composants/loader.css";
 @import "/5.Pages/Acceuil/tuto.css";
 @import "/5.Pages/Acceuil/restaurants_cards.css";

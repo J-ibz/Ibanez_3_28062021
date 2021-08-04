@@ -1,0 +1,43 @@
+.menu_list_item {
+  animation: apparition 1.5s;
+}
+.no1 {
+  animation-delay: 0;
+}
+.no2 {
+  animation-delay: 0.2s;
+}
+.no3 {
+  animation-delay: 0.4s;
+}
+.no4 {
+  animation-delay: 0.6s;
+}
+.no5 {
+  animation-delay: 0.8s;
+}
+.no6 {
+  animation-delay: 1s;
+}
+.no7 {
+  animation-delay: 1.2s;
+}
+.no8 {
+  animation-delay: 1.4s;
+}
+.no9 {
+  animation-delay: 1.6s;
+}
+.no_supplementaire {
+  animation-delay: 0.5s;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

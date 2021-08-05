@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
   justify-content: center;
+  -moz-column-gap: 3rem;
   column-gap: 3rem;
 }
 .homepage_restaurants_title {
@@ -30,6 +31,7 @@
 
 .homepage_restaurants_photos {
   border-radius: 10px 10px 0 0;
+  -o-object-fit: cover;
   object-fit: cover;
   height: 200px;
   width: 100%;
@@ -61,7 +63,7 @@
 .homepage_restaurants_card_like {
   width: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   font-size: 26px;
   margin-right: 20px;

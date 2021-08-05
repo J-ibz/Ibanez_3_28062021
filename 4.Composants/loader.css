@@ -7,7 +7,13 @@
   width: 100%;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.8);
+  -webkit-animation: loader 1.5s forwards;
   animation: loader 1.5s forwards;
+}
+@-webkit-keyframes loader {
+  100% {
+    visibility: hidden;
+  }
 }
 @keyframes loader {
   100% {
@@ -22,6 +28,7 @@
   overflow: visible;
   top: center;
   background: linear-gradient(0deg, #9356dc 33%, #ff79da 100%);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-family: shrikhand, "sans serif";
@@ -32,6 +39,7 @@
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   background: linear-gradient(0deg, #9356dc 33%, #ff79da 100%);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   padding-right: 0.5rem;
@@ -49,7 +57,13 @@
   border-top-color: var(--clr-primary-lighter);
   border-right-color: var(--clr-secondary);
   border-bottom-color: var(--clr-tertiary);
+  -webkit-animation: spinner 0.6s linear infinite;
   animation: spinner 0.6s linear infinite;
+}
+@-webkit-keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
 }
 @keyframes spinner {
   to {

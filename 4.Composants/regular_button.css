@@ -10,6 +10,7 @@
   cursor: pointer;
 }
 .btn:hover {
+  -webkit-filter: brightness(1.08);
   filter: brightness(1.08);
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.35);
 }
@@ -17,7 +18,7 @@
 .homepage_restaurants_card_like {
   width: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   font-size: 26px;
   margin-right: 20px;
@@ -45,13 +46,16 @@ label:before {
   font-size: 1em;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px grey;
+  -webkit-clip-path: circle(0% at 50% 100%);
   clip-path: circle(0% at 50% 100%); /*taille du cercle, position de départ sur l'axe Y et X */
   position: absolute;
 }
 
 input:checked + label i {
+  -webkit-clip-path: circle(100%);
   clip-path: circle(100%);
   background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
   background-clip: text;
   transition: all 0.7s ease-in-out;
   -webkit-text-stroke: 1px transparent;

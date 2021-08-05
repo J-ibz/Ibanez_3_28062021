@@ -22,13 +22,16 @@ label:before {
   font-size: 1em;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px grey;
+  -webkit-clip-path: circle(0% at 50% 100%);
   clip-path: circle(0% at 50% 100%); /*taille du cercle, position de départ sur l'axe Y et X */
   position: absolute;
 }
 
 input:checked + label i {
+  -webkit-clip-path: circle(100%);
   clip-path: circle(100%);
   background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
   background-clip: text;
   transition: all 0.7s ease-in-out;
   -webkit-text-stroke: 1px transparent;

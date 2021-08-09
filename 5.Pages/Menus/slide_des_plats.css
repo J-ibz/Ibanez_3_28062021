@@ -12,22 +12,14 @@
   color: white;
 }
 
-.menu_list_item:hover .slide-left i {
+.menu_list_item:focus .slide-left i {
   animation: test 0.4s linear 2;
 }
 
-.menu_list_item:hover .slide-left {
+.menu_list_item:focus .slide-left {
   margin-right: 0;
 }
-/* .menu_list_item i {
-  transition-duration: 0.8s;
-  transform: rotate(360deg);
-}
-.menu_list_item:hover i {
-  transform: rotate(100deg);
-} */
 
-/* /////test //// */
 @-webkit-keyframes test {
   to {
     transform: rotate(360deg);

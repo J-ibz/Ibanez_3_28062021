@@ -38,6 +38,9 @@
 }
 .menu_list_item_name {
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_list_item_ingredients {
   font-size: 15px;
